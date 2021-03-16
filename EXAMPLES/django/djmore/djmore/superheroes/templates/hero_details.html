@@ -1,0 +1,17 @@
+{% extends "superheroes_base.html" %}
+
+{% block content %}
+
+<h1>{{ hero.name }}</h1>
+<h2>Secret Identity: {{ hero.secret_identity }}</h2>
+<h2>Real Name: {{ hero.real_name }}</h2>
+<h3>Powers: {{ hero.powers.all | join:", "}}</h3>
+<h3>Enemies: {{ hero.enemies.all | join:", " }}</h3>
+
+{% if fliers %}
+<a href="{% url 'superheroes:heromanager' %}">Return to hero list</a>
+{% else %}
+<a href="{% url 'superheroes:herosort' %}">Return to hero list</a>
+{% endif %}
+{% endblock %}
+

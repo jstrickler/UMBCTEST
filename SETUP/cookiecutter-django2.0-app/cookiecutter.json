@@ -1,0 +1,5 @@
+{
+    "app_name": "App Name",
+    "app_slug": "{{cookiecutter.app_name.lower()|replace(' ', '_')|replace('-', '_')}}",
+    "app_description": "Short Description of the app"
+}

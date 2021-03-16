@@ -1,0 +1,20 @@
+{% extends "superheroes_base.html" %}
+
+{% block content %}
+
+<h1>Pick a hero:</h1>
+<h2>(minimal class-based list view)</h2>
+
+{% for hero in object_list %}
+<h3><a
+  href="{% url 'superheroes:minimaldetails' hero.id %}">
+    {{ hero.name }}
+</a>
+    {{ hero.secret_identity }}
+</h3>
+{% endfor %}
+
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ hero.name }}</title>
+    <style>.blue { color: blue; } .red { color: red; }</style>
+</head>
+<body>
+<h1>{{ hero.name }}</h1>
+
+<h2>Secret Identity: {{ hero.secret_identity }}</h2>
+
+<h2>Real Name:
+
+{% if hero.real_name|length > 8 %}
+    <span class="red">{{ hero.real_name }}</span>
+{% else %}
+    <span class="blue">{{ hero.real_name }}</span>
+{% endif %}
+
+</h2>
+
+<h2>Enemies:</h2>
+<ul>
+{% for enemy in hero.enemies.all %}
+    <h3><li>{{ enemy }}</li></h3>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+{% comment "just some notes" %}
+This is some random text that
+should not show up
+in the page
+{% endcomment %}

@@ -1,0 +1,10 @@
+{% extends "superheroes_base.html" %}
+
+{% block content %}
+<h2>Enemy Counts</h2>
+{% for hero in heroes %}
+<h4>{{ hero.name }} {{ hero.num_enemies }}</h4>
+{% endfor %}
+<hr/>
+<h2>{{ fliers.num_fliers }} superheroes can fly</h2>
+{% endblock content %}

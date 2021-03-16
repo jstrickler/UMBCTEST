@@ -1,0 +1,18 @@
+{% extends "superheroes_base.html" %}
+
+{% block title %}{{ title }}{% endblock title %}
+
+{% block content %}
+
+<h1>Pick a hero (URL version):</h1>
+
+{% for hero in superheroes %}
+<h3>
+    <a href="{% url 'superheroes:herodetails' hero.name  %}">{{ hero.name }}</a>
+</h3>
+{% endfor %}
+
+{% endblock %}
+
+</body>
+</html>

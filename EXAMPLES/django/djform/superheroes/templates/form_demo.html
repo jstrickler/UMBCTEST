@@ -1,0 +1,16 @@
+{% extends "superheroes_base.html" %}
+
+{% block content %}
+<h1>{{ page_title }}</h1>
+{% if invalid %}
+<div class="btn-warning">
+    Some fields need to be corrected
+</div>
+{% endif %}
+<form action="/superheroes/demoform" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit"/>
+</form>
+
+{% endblock %}

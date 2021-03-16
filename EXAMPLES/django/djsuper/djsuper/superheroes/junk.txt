@@ -1,0 +1,14 @@
+
+
+url(r'^myroute/(?P<stuff>.*)', myview, name="myview")
+
+def myview(request, *args):
+    if isinstance(stuff, int):
+        ...
+    elif isinstance(stuff, float):
+        ...
+
+
+{% url 'myapp:myview' '' %}
+
+{% url 'myapp:myview' {{ analyte }} %}

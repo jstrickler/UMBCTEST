@@ -1,0 +1,12 @@
+{% extends "superheroes_base.html" %}
+
+{% block content %}
+<h1>{{ page_title }}</h1>
+<form action="/forms/select/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Search"/>
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "superheroes_base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col"><h1>{{ hero.name }}</h1></div>
+    </div>
+    <div class="row">
+        <div class="col-3">Secret Identity</div>
+        <div class="col">&ldquo;{{ hero.secret_identity }}&rdquo;</div>
+    </div>
+    <div class="row">
+        <div class="col-3">Real Name</div>
+        <div class="col">{{ hero.real_name }}</div>
+
+    </div>
+    <div class="row">
+        <div class="col-3">Powers</div>
+        <div class="col">{{ hero.powers.all | join:", " }}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">Enemies</div>
+        <div class="col">{{ hero.enemies.all | join:", " }}</div>
+    </div>
+
+    <img
+        src="{% get_static_prefix %}{{ image_name }}.jpg"
+        alt="My image"
+        width="400"
+    />
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ hero.name }}</title>
+    <style>.blue { color: blue; } .red { color: red; }</style>
+</head>
+<body>
+<h1>{{ hero.name }}</h1>
+
+<h2>Secret Identity: {{ hero.secret_identity }}</h2>
+
+<h3>Not safe: {{ html_fragment }}</h3>
+<h3>Safe: {{ html_fragment | safe }}</h3>
+
+
+</body>
+</html>

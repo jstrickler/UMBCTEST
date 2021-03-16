@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ hero.name }}</title>
+</head>
+<body>
+{% with spam="fatty pig meat" ham="pig leg" %}
+<h1>{{ hero.name }}</h1>
+<h2>Secret Identity: {{ hero.secret_identity }}</h2>
+<h2>Real Name: {{ hero.real_name }}</h2>
+<h2>First enemy: {{ hero.enemies.all.0 }}</h2>
+<h3>Enemies list: {{ hero.enemies.all.1.powers.all.0 }}</h3>
+{% endwith %}
+</body>
+</html>

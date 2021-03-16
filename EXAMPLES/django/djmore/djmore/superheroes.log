@@ -1,0 +1,297 @@
+WARNING:django.request:Not Found: /superheroes/herolist
+ERROR:django.request:Internal Server Error: /superheroes/herosort
+Traceback (most recent call last):
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jstrick/Documents/curr/courses/python/examples3/django1.11/djmore/superheroes/views_meta.py", line 9, in hero_sort
+    return render(request, 'hero_sort.html', data)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/test/utils.py", line 107, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/test/utils.py", line 107, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'herodetails' with arguments '('Superman',)' not found. 1 pattern(s) tried: ['superheroes/herodetails$']
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herocustom/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herocustom/{% static 'js/superheroes.js'
+ERROR:django.request:Internal Server Error: /superheroes/heromanager/Superman
+Traceback (most recent call last):
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: hero_manager() got an unexpected keyword argument 'hero_name'
+ERROR:django.request:Internal Server Error: /superheroes/heromanager/
+Traceback (most recent call last):
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: hero_manager() got an unexpected keyword argument 'hero_name'
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+ERROR:django.request:Internal Server Error: /superheroes/herodetails/Superman
+Traceback (most recent call last):
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: '{{'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jstrick/Documents/curr/courses/python/examples3/django1.11/djmore/superheroes/views_meta.py", line 16, in hero_details
+    return render(request, 'hero_details.html', data)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/defaulttags.py", line 968, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/defaulttags.py", line 900, in __init__
+    super(TemplateIfParser, self).__init__(*args, **kwargs)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/defaulttags.py", line 903, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 700, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{' from '{{'
+ERROR:django.request:Internal Server Error: /superheroes/herodetails/Superman
+Traceback (most recent call last):
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jstrick/Documents/curr/courses/python/examples3/django1.11/djmore/superheroes/views_meta.py", line 16, in hero_details
+    return render(request, 'hero_details.html', data)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/defaulttags.py", line 983, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 15: 'endblock', expected 'endif'. Did you forget to register or load this tag?
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/flyerdetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/flyerdetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/flyerdetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herostatic/Superman
+WARNING:django.request:Not Found: /supermore
+WARNING:django.request:Not Found: /supermore/supercustom
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/flyerdetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/flyerdetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/flyerdetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/{% static 'js/superheroes.js'
+WARNING:django.request:Not Found: /superheroes/herodetails/{% static 'js/superheroes.js'
+ERROR:django.request:Internal Server Error: /superheroes/heromanager/
+Traceback (most recent call last):
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jstrick/Documents/curr/courses/python/examples3/django1.11/djmore/superheroes/views_manager.py", line 8, in hero_manager
+    return render(request, 'hero_manager.html', context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/test/utils.py", line 107, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/test/utils.py", line 107, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/template/defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/Users/jstrick/.pyenv/versions/anaconda3-5.0.0/lib/python3.6/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'herodetails' with arguments '('Superman', 'fliers')' not found. 1 pattern(s) tried: ['superheroes/herodetails/(?P<hero_name>.*)']

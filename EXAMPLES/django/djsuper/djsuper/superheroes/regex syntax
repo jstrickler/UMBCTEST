@@ -1,0 +1,19 @@
+
+pat
+
+p.t
+
+p[aeiou]t    pat pet pit pot put   but NOT   pt     potato carpet
+
+abc\d{3}
+
+\d+
+
+abc/?def
+
+r'^hero/....'
+
+abc(\d+)def
+
+abc(?P<my_digits\d+)def
+
